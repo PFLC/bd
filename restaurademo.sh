@@ -33,7 +33,7 @@ sudo mysql_secure_installation
 git clone https://github.com/datacharmer/test_db
 cd test_db
 echo '---- Restaurando -----'
-mysql -t < employees.sql -p prepa123
+mysql -t < employees.sql -u root -p 
 time mysql -t < test_employees_sha.sql
 mysql -u root -p 
 echo '---- Terminado todo por Default ----'
