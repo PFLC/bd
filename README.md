@@ -5,7 +5,7 @@
 <body>
 
 # Sitio de código colaborativo del grupo 510
-
+``` 
 oot@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p 
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -58,4 +58,37 @@ mysql> show tables ;
 4 rows in set (0.00 sec)
 
 
-</body>
+
+``` 
+
+
+# EXPORTAR ARCHIVO *.SQL A NOTEPAD Y DE SER POSIBLE VERIFICAR "NO USAR SIMBOLOS COMO Ñ, ETC. NI ESPACIOS EN LOS CAMPOS, usar giones o en camelCase" (solo los campos). Ejemplo:
+ElArchivoAsubir.sql
+
+
+## Bash, el comando SCP (Secure CoPy) complementa el SSH para enviar archivo por el canal cifrado y seguro.
+## Abre otro tabulador DENTRO DE WINDOWS 7,8,10
+_Es copiar un archivo al internet de manera segura_
+``` 
+scp -i llavesita510.pem ElArchivoAsubir.sql  ubuntu@xx.xx.xx.xx:/home/ubuntu
+(Notará es similar a SSH, pero agregando un archivo a la izquierda y a la derecha una ruta al volumen o disco duro del servidor)
+
+```
+
+## Generar restauración o insertar información de relleno a su BD
+## Dentro de Linux Server
+```
+ssh -i llavesita510.pem ubuntu@xx.xx.xx.xx
+$  cd
+$ ls
+     ... Ocupamos localizar el ElArchivoAsubir.sql en su disco duro PC
+$ mysql -u grupo510 -p < ElArchivoAsubir.sql
+... aparecerá un mensaje del archivo que se esta copiando
+
+$ mysql -u grupo510 -p
+> SHOW DATABASES;
+> USE  nombreDeLaBaseDeDatos;
+> SHOW TABLE;
+> DESC 
+
+``` 
