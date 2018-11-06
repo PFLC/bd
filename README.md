@@ -69,9 +69,10 @@ ElArchivoAsubir.sql
 ## Bash, el comando SCP (Secure CoPy) complementa el SSH para enviar archivo por el canal cifrado y seguro.
 ## Abre otro tabulador DENTRO DE WINDOWS 7,8,10
 _Es copiar un archivo al internet de manera segura_
+(Notará es similar a SSH, pero agregando un archivo a la izquierda y a la derecha una ruta al volumen o disco duro del servidor)
 ``` 
 scp -i llavesita510.pem ElArchivoAsubir.sql  ubuntu@xx.xx.xx.xx:/home/ubuntu
-(Notará es similar a SSH, pero agregando un archivo a la izquierda y a la derecha una ruta al volumen o disco duro del servidor)
+
 
 ```
 
@@ -89,6 +90,6 @@ $ mysql -u grupo510 -p
 > SHOW DATABASES;
 > USE  nombreDeLaBaseDeDatos;
 > SHOW TABLE;
-> DESC 
+> DESC ___EL NOMBRE DE LA TABLA___
 
 ``` 
