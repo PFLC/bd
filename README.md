@@ -95,7 +95,7 @@ $ mysql -u grupo510 -p < ElArchivoAsubir.sql
 $ mysql -u grupo510 -p
 > SHOW DATABASES;
 > USE  nombreDeLaBaseDeDatos;
-> SHOW TABLE;
+> SHOW TABLES;
 > DESC ___NOMBRE DE LA TABLA___
 > Select *  from tabla;
 
