@@ -4,16 +4,18 @@
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5191263.gif" width="358" height="103" alt="Grupo 510" />
 <body>
 
-# Sitio de código colaborativo del grupo 510
+# Sitio de código colaborativo del grupo 510, primer paso es ver donde estamos localizados en el volumen del servidor
+## # Listo empezamos en el servidor Linux, un poco mas enviaremos un archivo ahi.
+
+root@ip-172-31-34-57:/home/ubuntu#  ** cd**
+/home/ubuntu    **...contesta** favor de recordarlo.
+
 ``` 
-oot@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p 
+root@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p 
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 13591
 Server version: 5.7.24-0ubuntu0.18.04.1 (Ubuntu)
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
 Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
 owners.
@@ -25,8 +27,6 @@ Query OK, 0 rows affected, 1 warning (0.03 sec)
 
 mysql> flush privileges;
 Query OK, 0 rows affected (0.03 sec)
-
-....Aqui viene lo interesante....
 
 mysql> create database AutosJaguarDB;
 Query OK, 1 row affected (0.00 sec)
@@ -47,6 +47,8 @@ mysql> show tables ;
 | autostbl                |
 +-------------------------+
 1 row in set (0.00 sec)
+
+mysql> DESC autostbl ;
 +---------+-------------+------+-----+---------+-------+
 | Field   | Type        | Null | Key | Default | Extra |
 +---------+-------------+------+-----+---------+-------+
@@ -57,15 +59,15 @@ mysql> show tables ;
 +---------+-------------+------+-----+---------+-------+
 4 rows in set (0.00 sec)
 
-
-
 ``` 
 
-
-# EXPORTAR ARCHIVO *.SQL A NOTEPAD Y DE SER POSIBLE VERIFICAR "NO USAR SIMBOLOS COMO Ñ, ETC. NI ESPACIOS EN LOS CAMPOS, usar giones o en camelCase" (solo los campos). Ejemplo:
+# En Mockaroo.com deberá preparar de manera analitica la estructura de la tabla,
+## Sea parecida en los TIPOS DE DATOS (Texto, Integer,etc.) Y los nombre de los campos
+## "NO USAR SIMBOLOS COMO Ñ, ETC. NI ESPACIOS EN LOS CAMPOS, usar giones o en camelCase" (solo los campos). Ejemplo:
+### GUARDARLO CON LA EXTENSIÓN *.SQL A NOTEPAD Y DE SER POSIBLE VERIFICAR
 ElArchivoAsubir.sql
 
-
+# SUBIR ARCHIVOS
 ## Bash, el comando SCP (Secure CoPy) complementa el SSH para enviar archivo por el canal cifrado y seguro.
 ## Abre otro tabulador DENTRO DE WINDOWS 7,8,10
 _Es copiar un archivo al internet de manera segura_
@@ -82,14 +84,20 @@ scp -i llavesita510.pem ElArchivoAsubir.sql  ubuntu@xx.xx.xx.xx:/home/ubuntu
 ssh -i llavesita510.pem ubuntu@xx.xx.xx.xx
 $  cd
 $ ls
-     ... Ocupamos localizar el ElArchivoAsubir.sql en su disco duro PC
+     ... Ocupamos localizar el ElArchivoAsubir.sql que llego anteriormente via SCP
+     ...  debe esta en $ cd /home/ubuntu
 $ mysql -u grupo510 -p < ElArchivoAsubir.sql
-... aparecerá un mensaje del archivo que se esta copiando
+... aparecerá un mensaje del archivo que se esta copiando y todos los errores en los datos o estructura.
+
+... Si requiere modificar algo en el servidor usar "nano" Editor
+... $ nano ElArchivoAsubir.sql    (para guardar el CONTROL+o y salir CONTROL+x)
 
 $ mysql -u grupo510 -p
 > SHOW DATABASES;
 > USE  nombreDeLaBaseDeDatos;
 > SHOW TABLE;
-> DESC ___EL NOMBRE DE LA TABLA___
+> DESC ___NOMBRE DE LA TABLA___
+> Select *  from tabla;
 
 ``` 
+# Cualquier duda estoy a sus ordenes.
