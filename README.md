@@ -7,10 +7,11 @@
 # Sitio de código colaborativo del grupo 510, primer paso es ver donde estamos localizados en el volumen del servidor
 ## # Listo empezamos en el servidor Linux, un poco mas enviaremos un archivo ahi.
 
-root@ip-172-31-34-57:/home/ubuntu#  ** cd**
-/home/ubuntu    **...contesta** favor de recordarlo.
-
 ``` 
+root@ip-172-31-34-57:/home/ubuntu# cd
+/home/ubuntu    ...contesta favor de recordarlo.
+
+ 
 root@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p 
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
