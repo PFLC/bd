@@ -12,7 +12,7 @@ root@ip-172-31-34-57:/home/ubuntu# cd
 /home/ubuntu    ...contesta favor de recordarlo.
 
  
-root@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p 
+root@ip-172-31-34-57:/home/ubuntu#  mysql -u root -p    (o tambien "grupo510" para los avanzados)
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 13591
