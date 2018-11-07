@@ -71,22 +71,22 @@ ElArchivoAsubir.sql
 # SUBIR ARCHIVOS
 ## Bash, el comando SCP (Secure CoPy) complementa el SSH para enviar archivo por el canal cifrado y seguro.
 ## Abre otro tabulador DENTRO DE WINDOWS 7,8,10
-_Es copiar un archivo al internet de manera segura_
-(Notará es similar a SSH, pero agregando un archivo a la izquierda y a la derecha una ruta al volumen o disco duro del servidor)
+_Es copiar un archivo al internet de manera segura con comandos, ¡ Super !_
+(Notará es similar a SSH, pero agregando un archivo a la izquierda y a la derecha una ruta al volumen o disco duro del servidor),
 ``` 
-scp -i llavesita510.pem ElArchivoAsubir.sql  ubuntu@xx.xx.xx.xx:/home/ubuntu
+scp -i llavesita510.pem     ElArchivoAsubir.sql    ubuntu@xx.xx.xx.xx:/home/ubuntu
 
 
 ```
-
-## Generar restauración o insertar información de relleno a su BD
+## Restauración o insertar información de relleno a su BD
 ## Dentro de Linux Server
 ```
 ssh -i llavesita510.pem ubuntu@xx.xx.xx.xx
-$  cd
+$ cd
 $ ls
      ... Ocupamos localizar el ElArchivoAsubir.sql que llego anteriormente via SCP
      ...  debe esta en $ cd /home/ubuntu
+     ... Ahora si listo para restaurar (o insertar masivamente)
 $ mysql -u grupo510 -p < ElArchivoAsubir.sql
 ... aparecerá un mensaje del archivo que se esta copiando y todos los errores en los datos o estructura.
 
@@ -98,7 +98,12 @@ $ mysql -u grupo510 -p
 > USE  nombreDeLaBaseDeDatos;
 > SHOW TABLES;
 > DESC ___NOMBRE DE LA TABLA___
+    ... Y aparecera la estructura de la tabla
 > Select *  from tabla;
-
+    .. Y aqui las consultas que ya sabe hacer, ¡ Muy Bien  y claro logró superar los errores, es normal aprendiendo mucho !
 ``` 
 # Cualquier duda estoy a sus ordenes.
+
+# Adios Classroom.google.com ya se cerrará el curso.
+
+
