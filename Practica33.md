@@ -2,7 +2,7 @@
 
 ## Video de la practica https://www.youtube.com/watch?v=atCI3gqR-2E
 ## Hay 2 Recursos:
-- Ouede usar uno es el Servidor AWS
+- Puede usar Servidor AWS para mandar llamar su tabla de la practica33.md
 - Otro es inscribirse http://www.freesqldatabase.com que le regala 1 BD de 5 megas y la puede administrar via http://www.phpmyadmin.co/ y cargando datos con MOCKAROO.com
 
 Aqui estará la lista de cotejo de los que terminaron la practica:
