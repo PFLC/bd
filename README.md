@@ -9,4 +9,4 @@
 ## Complementando con http://mockaroo.com para los 1000 registros con no mas de 3  tablase relacionadas
 ## http://phpmyadmin.co o JetBrains DataGRID, para adiminstrar el contenido/BD 
 ## Hay 2 servidores uno que es AWS que el docente le puede dar a Ud. o tambien 
-## ... via http://freemsqldatabase.com (5 MB de datos remotos gratis)
+## ... via http://www.freesqldatabase.com (5 MB de datos remotos gratis)
